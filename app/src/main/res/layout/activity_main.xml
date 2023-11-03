@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5000dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="搜索图标"
+        android:src="@mipmap/icon_search"
+        android:scaleType="center"/>
+
+
+    <TextView
+        android:id="@+id/id_tv_filepath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件路径:/mnt/sdcard/" />
+
+    <ImageButton
+        android:id="@+id/id_btn_back"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:src="@mipmap/back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ListView
+        android:id="@+id/id_lv_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_tv_filepath"
+        android:layout_above="@id/id_btn_back"
+        android:divider="#000"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+
+
+    <ImageButton
+        android:id="@+id/createFileBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="create"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
+        android:src="@mipmap/fbk" />
+
+</RelativeLayout>
